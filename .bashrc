@@ -3,6 +3,7 @@ alias java="java -Dfile.encoding=UTF-8"
 
 alias rm="rm -i"
 alias cp="cp -i"
+alias ls="ls -G"
 
 if [ -d $HOME/.rbenv ]; then
   export PATH=$PATH:$HOME/.rbenv/bin

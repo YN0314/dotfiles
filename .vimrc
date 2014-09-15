@@ -23,6 +23,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
 
@@ -49,6 +50,8 @@ set autoindent
 set number
 
 syntax enable
+set background=dark
+colorscheme solarized
 
 " 環境別設定
 if filereadable(expand('~/.vimrc.local'))
