@@ -23,6 +23,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'Shougo/vimproc'
 NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
@@ -49,9 +50,25 @@ set autoindent
 " 行番号を表示する
 set number
 
+" Colorscheme set up
 syntax enable
 set background=dark
 colorscheme solarized
+
+"" Unite.vim {
+" The prefix key. \+u
+nnoremap [unite] <Nop>
+nmap <Leader>u [unite]
+
+" unite.vim keymap
+nnoremap [unite]bf :<C-u>Unite<Space>buffer<CR>
+nnoremap [unite]fr :<C-u>Unite<Space>file_rec<CR>
+nnoremap [unite]bm :<C-u>Unite<Space>bookmark<CR>
+nnoremap [unite]fm :<C-u>Unite<Space>file_mru<CR>
+" }
+
+" reload vimrc
+nnoremap <Space>s.  :<C-u>source $VIMRC<Return>
 
 " 環境別設定
 if filereadable(expand('~/.vimrc.local'))

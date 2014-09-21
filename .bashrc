@@ -6,7 +6,7 @@ alias cp="cp -i"
 alias ls="ls -G"
 
 if [ -d $HOME/.rbenv ]; then
-  export PATH=$PATH:$HOME/.rbenv/bin
+  export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH
   eval "$(rbenv init -)"
 fi
 

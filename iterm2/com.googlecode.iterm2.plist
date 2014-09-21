@@ -514,7 +514,7 @@
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
 	<key>NSWindow Frame Preferences</key>
-	<string>277 257 924 485 0 0 1440 878 </string>
+	<string>277 256 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 124 1440 754 0 0 1440 878 </string>
 	<key>New Bookmarks</key>
@@ -688,7 +688,7 @@
 			<key>Background Image Location</key>
 			<string></string>
 			<key>Blend</key>
-			<real>0.89999997615814209</real>
+			<real>0.81438249349594116</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -696,7 +696,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>3.9138543605804443</real>
+			<real>1.8016664981842041</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1229,7 +1229,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.14574241638183594</real>
+			<real>0.10717455297708511</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1316,7 +1316,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-09-15T04:50:33Z</date>
+	<date>2014-09-16T05:40:42Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
