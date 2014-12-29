@@ -58,17 +58,17 @@ colorscheme solarized
 "" Unite.vim {
 " The prefix key. \+u
 nnoremap [unite] <Nop>
-nmap <Leader>u [unite]
+nmap <Space>u [unite]
 
 " unite.vim keymap
-nnoremap [unite]bf :<C-u>Unite<Space>buffer<CR>
-nnoremap [unite]fr :<C-u>Unite<Space>file_rec<CR>
-nnoremap [unite]bm :<C-u>Unite<Space>bookmark<CR>
-nnoremap [unite]fm :<C-u>Unite<Space>file_mru<CR>
+nnoremap [unite]bf :<C-u>Unite buffer<CR>
+nnoremap [unite]fr :<C-u>Unite file_rec<CR>
+nnoremap [unite]bm :<C-u>Unite bookmark<CR>
+nnoremap [unite]fm :<C-u>Unite file_mru<CR>
 " }
 
 " reload vimrc
-nnoremap <Space>s.  :<C-u>source $VIMRC<Return>
+nnoremap <Space>s  :<C-u>source $VIMRC<CR>
 
 " 環境別設定
 if filereadable(expand('~/.vimrc.local'))
