@@ -26,6 +26,9 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'altercation/vim-colors-solarized'
 
+" slim syntax highlight
+NeoBundle 'slim-template/vim-slim'
+
 call neobundle#end()
 
 " Required:
@@ -76,3 +79,8 @@ if filereadable(expand('~/.vimrc.local'))
 endif
 
 filetype on
+
+" scss systax highlight
+au BufRead,BufNewfile *.scss set filetype=sass
+
+
