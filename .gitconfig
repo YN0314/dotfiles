@@ -1,0 +1,14 @@
+[user]
+	name = yasuhito_nakagawa
+	email = nakagawa.ablast@gmail.com
+[alias]
+  co = checkout
+[core]
+  editor = vim
+[color]
+  ui = auto
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
