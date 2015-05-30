@@ -26,7 +26,7 @@ PROMPT='%F{cyan}%1v%f%~
 %F{yellow}[%n@%m]%f %# '
 PROMPT2='%_%% '
 SPROMPT='%r is correct? [n,y,a,e]: '
-[[ -n '${REMOTEHOST}${SSH_CONNECTION}' ]] && PROMT='%F{magenda}${HOST%%.*} ${PROMPT}'
+[[ -n '${REMOTEHOST}${SSH_CONNECTION}' ]] && PROMT='%F{magenda}${HOST%%.*}%f ${PROMPT}'
 
 # Locate
 export LANG=ja_JP.UTF-8
