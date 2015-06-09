@@ -103,6 +103,12 @@ kterm*|xterm)
   ;;
 esac
 
+if [ -d $HOME/.zsh ]; then
+  for ext in $HOME/.zsh/*.zsh; do
+    source $ext
+  done
+fi
+
 # Localenv
 if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local

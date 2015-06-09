@@ -12,3 +12,5 @@
   branch = auto
   interactive = auto
   grep = auto
+[include]
+  path = ~/.gitconfig.local
