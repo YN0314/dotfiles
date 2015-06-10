@@ -114,3 +114,4 @@ if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
 
+alias tmux="TERM=screen-256color-bce tmux"

@@ -34,7 +34,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/vimproc'
-NeoBundle 'altercation/vim-colors-solarized'
 
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'tpope/vim-endwise'
@@ -46,10 +45,12 @@ NeoBundle 'itchyny/lightline.vim'
 
 " slim syntax highlight
 NeoBundle 'slim-template/vim-slim'
+
 " color scheme
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'sheerun/vim-wombat-scheme'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'nanotech/jellybeans.vim'
 
 call neobundle#end()
 
@@ -79,12 +80,12 @@ set number
 set laststatus=2
 
 " Colorscheme set up
-syntax enable
+syntax on
 set background=dark
 " colorscheme solarized
-"let g:hybrid_use_Xresources = 1
-"colorscheme hybrid
-colorscheme wombat
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
+"colorscheme wombat
 
 "" Unite.vim {
 " The prefix key. \+u
@@ -123,7 +124,7 @@ function! GitBranchName() " {{{
 endfunction " }}}
 
 let g:lightline = {
-  \   'Colorscheme': 'wombat',
+  \   'Colorscheme': 'hybrid',
   \   'active': {
   \     'left': [
   \       ['mode', 'paste'],
