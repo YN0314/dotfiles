@@ -97,6 +97,9 @@ nnoremap [unite]bf :<C-u>Unite buffer<CR>
 nnoremap [unite]fr :<C-u>Unite file_rec<CR>
 nnoremap [unite]bm :<C-u>Unite bookmark<CR>
 nnoremap [unite]fm :<C-u>Unite file_mru<CR>
+
+let g:unite_enable_start_insert=1
+let g:unite_source_history_yank_enable=1
 " }
 
 " reload vimrc

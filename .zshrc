@@ -18,7 +18,6 @@ precmd () {
   psvar=()
   LANG=ja_JP.UTF-8 vcs_info
   [[ -n ${vcs_info_msg_0_} ]] && psvar[1]="[${vcs_info_msg_0_}]:"
-    
 }
 
 # プロンプト
@@ -115,3 +114,7 @@ if [ -f ~/.zshrc.local ]; then
 fi
 
 alias tmux="TERM=screen-256color-bce tmux"
+
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -rpi"

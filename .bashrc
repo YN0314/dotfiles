@@ -14,3 +14,5 @@ fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 alias be="bundle exec"
+
+VIMRC="~/.vimrc"
