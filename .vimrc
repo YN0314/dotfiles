@@ -52,6 +52,10 @@ NeoBundle 'sheerun/vim-wombat-scheme'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'nanotech/jellybeans.vim'
 
+" vim-markdown and quickrun
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'kannokanno/previm'
+
 call neobundle#end()
 
 " Required:
@@ -95,6 +99,7 @@ nmap <Space>u [unite]
 " unite.vim keymap
 nnoremap [unite]bf :<C-u>Unite buffer<CR>
 nnoremap [unite]fr :<C-u>Unite file_rec<CR>
+nnoremap [unite]f :<C-u>Unite file<CR>
 nnoremap [unite]bm :<C-u>Unite bookmark<CR>
 nnoremap [unite]fm :<C-u>Unite file_mru<CR>
 
@@ -154,4 +159,13 @@ hi LineNr ctermbg=0 ctermfg=0
 hi CursorLineNr ctermbg=4 ctermfg=0
 set cursorline
 hi clear CursorLine
+
+" MarkdownQuickRun
+let g:previm_enable_realtime = 1
+let g:previm_open_cmd = 'open -a Safari'
+nnoremap <C-p><C-o> :<C-u>PrevimOpen<CR>
+augroup PrevimSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
 
