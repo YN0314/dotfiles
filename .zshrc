@@ -8,6 +8,7 @@ setopt prompt_subst
 
 # vcs_info customize
 zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' enable svn
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr "+"
 zstyle ':vcs_info:*' unstagedstr "-"
@@ -29,7 +30,8 @@ SPROMPT='%r is correct? [n,y,a,e]: '
 
 # Locate
 export LANG=ja_JP.UTF-8
-
+# vimrc
+export VIMRC=~/.vimrc
 # pathのみで移動
 setopt auto_cd
 # -(タブ)で戻るディレクトリを選択
@@ -118,3 +120,19 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -rpi"
+
+#pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PYENV_ROOT=/usr/local/var/pyenv
+
+# colordiff
+alias diff="colordiff"
+
+# wildcard
+setopt nonomatch
+
+# tomcat7
+export CATALINA_HOME="/usr/local/Cellar/tomcat7/7.0.69/libexec"
+export APP_ROOT="${CATALINA_HOME}/webapps"
+alias tomcat="${CATALINA_HOME}/bin/catalina.sh"
+

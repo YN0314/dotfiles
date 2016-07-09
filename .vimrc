@@ -169,3 +169,10 @@ augroup PrevimSettings
   autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
+" paste mode keybind
+nnoremap <Space>sp :<C-u>set paste<CR>
+nnoremap <Space>snp :<C-u>set nopaste<CR>
+
+" enable backspace for insert-mode
+set backspace=indent,eol,start
+
