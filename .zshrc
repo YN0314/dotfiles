@@ -7,8 +7,8 @@ autoload -Uz vcs_info
 setopt prompt_subst
 
 # vcs_info customize
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:*' enable svn
+zstyle ':vcs_info:*' enable git svn
+zstyle ':vcs_info:*' max-exports 7
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr "+"
 zstyle ':vcs_info:*' unstagedstr "-"
