@@ -17,7 +17,8 @@ zstyle ':vcs_info:*' actionformats '%s][%b %c%u%m (caution:%a)'
 
 precmd () {
   psvar=()
-  LANG=ja_JP.UTF-8 vcs_info
+  LANG=ja_JP.UTF-8
+  vcs_info
   [[ -n ${vcs_info_msg_0_} ]] && psvar[1]="[${vcs_info_msg_0_}]:"
 }
 
@@ -121,6 +122,12 @@ alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -rpi"
 
+#rbenv
+if [ -d $HOME/.rbenv ]; then
+  export PATH=$HOME/.rbenv/bin:$PATH
+  eval "$(rbenv init -)"
+fi
+
 #pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 export PYENV_ROOT=/usr/local/var/pyenv
@@ -135,4 +142,7 @@ setopt nonomatch
 export CATALINA_HOME="/usr/local/Cellar/tomcat7/7.0.69/libexec"
 export APP_ROOT="${CATALINA_HOME}/webapps"
 alias tomcat="${CATALINA_HOME}/bin/catalina.sh"
+
+# postgresql
+export PGDATA=/usr/local/var/postgres
 
