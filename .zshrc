@@ -88,7 +88,7 @@ esac
 
 if which bundler > /dev/null 2>&1; then
   alias be='bundle exec'
-  alias bi='bundle install --path .bundle'
+  alias bi='bundle install --path vendor/bundle'
 fi
 
 if which java > /dev/null 2>&1; then
@@ -129,8 +129,8 @@ if [ -d $HOME/.rbenv ]; then
 fi
 
 #pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-export PYENV_ROOT=/usr/local/var/pyenv
+#if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+#export PYENV_ROOT=/usr/local/var/pyenv
 
 # colordiff
 alias diff="colordiff"
