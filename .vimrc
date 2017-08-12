@@ -56,6 +56,9 @@ NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'kannokanno/previm'
 
+" elixir plugins
+NeoBundle 'elixir-lang/vim-elixir'
+
 call neobundle#end()
 
 " Required:
